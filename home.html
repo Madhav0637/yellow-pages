@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yellow pages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(255 212 0);
+            color: white;
+            padding: 50px;
+            text-align: left;
+        }
+
+        #login, #advertise {
+            float: right;
+            margin-right: 20px;
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        #search-bar {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 2;
+    }
+
+    #search-bar input {
+        padding: 10px;
+        width: 420px;
+        height: 40px;
+        border: none;
+        font-size: 18px;
+        border-radius: 20px 0 0 20px;
+        outline: none;
+    }
+
+    #search-bar button {
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 20px;
+        border: none;
+        margin: 0;
+        width: 100px;
+        height: 60px;
+        border-radius: 0 20px 20px 0;
+        cursor: pointer;
+    }
+
+        #main-photo {
+            text-align: center;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        #main-photo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #category-buttons {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .category-button {
+            padding: 20px 35px;
+            margin: 0 60px;
+            font-size: 16px;
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            background-color: #fff;
+            border: 1px slid black;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all .1s ease;
+        }
+        .category-button:hover{
+            color: #fff;
+            background-color: rgba(255, 213, 0, 0.844);
+        }
+        h1{
+            margin: 50px;
+            font-size: 41px;
+            color: black;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            letter-spacing: 4px;
+        }
+        img{
+            width: 1090px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="login"><a href="#">Login</a></div>
+        <div id="advertise"><a href="#">Advertise</a></div>
+    </header>
+    <h1>DISCOVER BIDHOLI</h1>
+    <div id="main-photo">
+        <div id="search-bar">
+            <input type="text" placeholder="Explore.... ">
+            <button onclick="search()">Search</button>
+        </div>
+        <img src="bg.png" alt="Main Photo">
+    </div>
+
+    <div id="category-buttons">
+        <button class="category-button">Gym</button>
+        <button class="category-button">Hostel</button>
+        <button class="category-button">Cafe</button>
+        <button class="category-button">College</button>
+    </div>
+</body>
+</html>
